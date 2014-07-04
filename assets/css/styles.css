@@ -185,6 +185,15 @@ div.row-blue {
 span.contribook_microbloguserpicture img {
 	border-radius: 100%;
 	border: 2px #1D2D44 solid;
+	margin-right: 6px;
+}
+
+span.contribook_microblogtime {
+	display: none;
+}
+
+span.contribook_microblogmessage {
+	color: #1D2D44;
 }
 
 .home-splash > div {
@@ -196,4 +205,17 @@ span.contribook_microbloguserpicture img {
 .home-splash:hover > div {
     display: block !important;
     opacity: 0.8;
+}
+
+.contribook ul li {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	list-style-position: inside;
+	margin-bottom: 23px;
+	margin-left: -25px;
+}
+
+.contribook ul {
+	margin-top: 19px;
 }

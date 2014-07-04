@@ -24,7 +24,7 @@
 <div class="row">
 	<?php if(CONTRIBOOK) { require(dirname(__FILE__).'/../../../contribook/main/contribook/lib_contribook.php'); } ?>
 
-	<div class="col-md-8 col-md-offset-2">
+	<div class="contribook col-md-8 col-md-offset-2">
 		<div class="col-md-4">
 			<h2><i class="icon-twitter"></i> The latest twitter posts</h2>
 			<?php if(CONTRIBOOK) { CONTRIBOOK_MICROBLOG::show(0,3); } ?>
