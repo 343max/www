@@ -16,7 +16,7 @@
 	</div>
 </div>
 <div class="row">
-	<div class="col-md-12" style="text-align: center; padding: 25px 0;">
+	<div class="col-md-12" style="text-align: center; padding: 33px 0;">
 		<h3><a href="/conf">ownCloud Contributor Conference - August 2014, Berlin</a></h3>
 		<small>The awesome community behind ownCloud will get together at the TU Berlin for 5 days of writing code and sharing beer, knowledge and inspiration.</small>
 	</div>
