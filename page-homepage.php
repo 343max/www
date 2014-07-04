@@ -1,11 +1,13 @@
 <div class="home-top-row row-blue">
 	<div class="row">
-		<div class="col-md-8 col-md-offset-2" style="color: white;">
-			<h1 style="font-size: 3em;" >Your data - under your control</h1>
-			<h2 style="margin-top: -10px; margin-bottom: 26px; font-size: 1.6em; font-weight: 300;">With ownCloud you can sync & share your files, calendar, contacts and more. 
-				Access your data from all your devices, on an open platform you can extend and modify.</h2>
-				<a href="/install" class="btn btn-lg btn-primary">Download now</a>&nbsp;&nbsp;or&nbsp;&nbsp;
-				<a href="/providers" class="btn btn-lg btn-default">Find hosting</a>
+		<div class="container">
+			<div class="col-md-12" style="color: white;">
+				<h1 style="font-size: 3em;" >Your data - under your control</h1>
+				<h2 style="margin-top: -10px; margin-bottom: 26px; font-size: 1.6em; font-weight: 300;">With ownCloud you can sync & share your files, calendar, contacts and more. 
+					Access your data from all your devices, on an open platform you can extend and modify.</h2>
+					<a href="/install" class="btn btn-lg btn-primary">Download now</a>&nbsp;&nbsp;or&nbsp;&nbsp;
+					<a href="/providers" class="btn btn-lg btn-default">Find hosting</a>
+			</div>
 		</div>
 	</div>
 	<div class="row" style="padding-bottom: 0; overflow: hidden;">
@@ -16,9 +18,11 @@
 	</div>
 </div>
 <div class="row">
-	<div class="col-md-12" style="text-align: center; padding: 33px 0;">
-		<h3><a href="/conf">ownCloud Contributor Conference - August 2014, Berlin</a></h3>
-		<small>The awesome community behind ownCloud will get together at the TU Berlin for 5 days of writing code and sharing beer, knowledge and inspiration.</small>
+	<div class="container">
+		<div class="col-md-12" style="text-align: center; padding: 33px 0;">
+			<h3><a href="/conf">ownCloud Contributor Conference - August 2014, Berlin</a></h3>
+			<small>The awesome community behind ownCloud will get together at the TU Berlin for 5 days of writing code and sharing beer, knowledge and inspiration.</small>
+		</div>
 	</div>
 </div>
 <div class="row">
