@@ -164,3 +164,20 @@ article.post figcaption {
 		float: none;
 	}
 }
+
+div.home-top-row div {
+	text-align: center;
+}
+
+div.home-top-row h1, div.home-top-row h2, div.home-top-row p {
+	color: white;
+}
+
+body.home .navbar {
+	margin-bottom: 0;
+	border-bottom: 0;
+}
+
+div.row-blue {
+	background-color: #1D2D44;
+}

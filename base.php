@@ -33,6 +33,10 @@ if(is_page('oc-news')) { include roots_template_path(); } else {
         </div><!-- /.wrap -->
       </div><!-- /.conference -->
 
+    <?php } elseif(is_page('homepage')) { ?>
+
+    <?php include roots_template_path(); ?>
+
     <?php } else { // Handle all other layouts ?>
 
       <div class="wrap container" role="document">

@@ -1,106 +1,51 @@
-<?php if(CONTRIBOOK) { require(dirname(__FILE__).'/../../../contribook/main/contribook/lib_contribook.php'); } ?>
-<div class="header"><div class="row image">
-	<div class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
-		<img class="home-header-image" alt="image about owncloud sync" src="<?php echo get_template_directory_uri(); ?>/assets/img/home/ocsplash.png" />
+<div class="home-top-row row-blue">
+	<div class="row">
+		<div class="col-md-8 col-md-offset-2">
+			<h1 style="font-size: 3em;" >Your data - under your control</h1>
+			<h2 style="font-size: 1.6em; font-weight: 300;">With ownCloud you can sync & share your files, calendar, contacts and more. 
+				Access your data from all your devices, on an open platform you can extend and modify.</h2>
+				<a href="/install" class="btn btn-lg btn-default">Download now</a> or 
+				<a href="/providers" class="btn btn-lg btn-default">Find hosting</a>
+		</div>
+	</div>
+	<div class="row" style="padding-bottom: 0; overflow: hidden;">
+		<div class="col-md-8 col-md-offset-2">
+			<img style="width: 90%; margin-bottom: -100px" src="https://cloud.needham.im/public.php?service=files&t=4816bbe6add9f123b8f6f10366006ccf&download"></img>
+		</div>
 	</div>
 </div>
 <div class="row">
-	<h2 class="slogan">Your data - under your control</h2>
-</div>
-<div class="row">
-	<div class="col-md-10 col-md-offset-1">
-		<p style="text-align: center"><strong>With ownCloud you can sync & share your files, calendar, contacts and more.</strong><br/> 
-			Access your data from all your devices, on an open platform you can extend and modify.</p>
+	<div class="col-md-12" style="text-align: center; padding: 25px 0 35px 0">
+		<h3><a href="/conf">ownCloud Contributor Conference - August 2014, Berlin</a></h3>
+		<small>The awesome community behind ownCloud will get together at the TU Berlin for 5 days of writing code and sharing beer, knowledge and inspiration.</small>
 	</div>
 </div>
-<div class="row highlight">
-	<h3 class="conference hidden-xs"><a href="/conf">ownCloud Contributor Conference - August 2014, Berlin</a></h3>
-	<h3 class="conference visible-xs"><a href="/conf">ownCloud Contributor Conference <br/>
-	August 2014, Berlin</a></h3>
+<div class="row row-blue" style="padding: 40px 0 40px 0">
+	<div class="col-md-2 col-md-offset-2"><a class="btn btn-block btn-lg join-button btn-primary" href="/conf" role="button">Hackathon, Berlin</a></div>
+	<div class="col-md-2"><a class="btn btn-block btn-primary btn-lg join-button" href="/contribute" role="button">Join development</a></div>
+	<div class="col-md-2"><a class="btn btn-block btn-primary btn-lg join-button" href="https://github.com/owncloud/core/issues" role="button">Report an issue</a></div>
+	<div class="col-md-2"><a class="btn btn-block btn-primary btn-lg join-button" href="https://www.transifex.com/projects/p/owncloud/" role="button">Help translating</a></div>
 </div>
-</div>
-	<div class="row 3-column-lg-md-sm">
+<div class="container" role="document">
+	<div class="row" style="margin-top: 30px;">
+		<main class="main <?php echo roots_main_class(); ?>" role="main">
 
-		<div class="col-lg-4 col-md-4 col-xs-12 col-sm-4">
-			<h2><i class="icon-filter">&nbsp;</i> Integration</h2>
-			<p>ownCloud uses open standards to allow easy integration with your existing services. Use CalDAV, CardDAV, and WebDAV to sync your data along with many more.</p>
-		</div>
+			<?php if(CONTRIBOOK) { require(dirname(__FILE__).'/../../../contribook/main/contribook/lib_contribook.php'); } ?>
 
-		<div class="col-lg-4 col-md-4 col-xs-12 col-sm-4">
-			<h2><i class="icon-exclamation-circle">&nbsp;</i> Privacy</h2>
-			<p>ownCloud protects your privacy by allowing you to maintain control over your data. Server-side encryption can secure data hosted in external sources.</p>
-		</div>
-
-		<div class="col-lg-4 col-md-4 col-xs-12 col-sm-4">
-			<h2><i class="icon-unlock">&nbsp;</i> Open Source</h2>
-			<p>All of the code running ownCloud is open source, allowing the public to openly review its security and anyone can contribute towards the development of ownCloud.</p>
-		</div>
-	</div>
-	<div class="row" id="getapps">
-		<div class="col-sm-12">
-			<div class="row">
-				<div class="col-sm-6">
-					<h2><i class="icon-cloud-download">&nbsp;</i> Get your ownCloud</h2>
-					<p>Choose <strong>your preferred way</strong> to install your ownCloud Server.</p>
-					<div class="btn-group">
-						<a class="btn btn-primary btn-lg installbtn" href="/install"><i class="icon-cloud-download" ></i> Host ownCloud</br><small>For server owners</small></a>
-						<a class="btn btn-default btn-lg hostingbtn" href="/providers/"><i class="icon-search" ></i> Find hosting</br><small>with a third party</small></a>
-					</div>
+			<div class="row 3-column-lg-md-sm">
+				<div class="col-lg-4 col-md-4 col-xs-12 col-sm-4">
+					<h2><i class="icon-twitter"></i> The latest twitter posts</h2>
+					<?php if(CONTRIBOOK) { CONTRIBOOK_MICROBLOG::show(0,3); } ?>
 				</div>
-				<div class="col-sm-6">
-					<h2><i class="icon-refresh">&nbsp;</i> Sync your files</h2>
-					<p>Sync your files using our sync clients for desktop and mobile devices.</p>
-					<ul class="list-unstyled list-inline">
-					  <li>
-						<a id="desktopclient" href="/install#desktop" role="button">
-							<img id="sync-button" alt="desktopclient" src="<?php echo get_template_directory_uri(); ?>/assets/img/clients/buttons/desktopapp.png" />
-						</a>
-					  </li>
-					  <li>
-						<a id="appstore" href="<?php echo $DOWNLOAD_CLIENT_MOBILE_IOS; ?>" target="_blank"  role="button">
-							<img id="sync-button" alt="appstore" src="<?php echo get_template_directory_uri(); ?>/assets/img/clients/buttons/appstore.png" />
-						</a>
-					  </li>
-					  <li>
-						<a id="googleplay" href="<?php echo $DOWNLOAD_CLIENT_MOBILE_ANDROID; ?>" target="_blank"  role="button">
-							<img id="sync-button" alt="googleplay" src="<?php echo get_template_directory_uri(); ?>/assets/img/clients/buttons/googleplay.png" />
-						</a>
-					  </li>
-					</ul>
+				<div class="col-lg-4 col-md-4 col-xs-12 col-sm-4">
+					<h2><i class="icon-comment"></i> The latest from the forum</h2>
+					<?php if(CONTRIBOOK) { CONTRIBOOK_FORUM::show(0,7); }?>
+				</div>
+				<div class="col-lg-4 col-md-4 col-xs-12 col-sm-4">
+					<h2><i class="icon-cloud"></i> ownCloud.com news</h2>
+					<?php if(CONTRIBOOK) { CONTRIBOOK_NEWS::show(0,7); } ?>
+				</div>
 			</div>
-		</div>
-	</div>
-</div>
-<div class="row 2-column-lg-md-sm" style="margin-top: -0.5em">
-	<div class="col-lg-4 col-md-4 col-xs-12 col-sm-4">
-		<h2><i class="icon-rocket">&nbsp;</i> Get involved</h2>
-		<p>Join a large and growing community supporting the development and testing of ownCloud to help make it better for everyone. Help answer posts in the <a href="http://forum.owncloud.org/">Forum</a>, post bugs in the <a href="https://github.com/owncloud/core/issues">tracker</a>, test ownCloud using the <a href="http://doc.owncloud.org/server/7.0/developer_manual/testing/index.html">test plan</a>, hang out in the <a href="http://webchat.freenode.net/?channels=owncloud">IRC channel</a> or help <a href="https://www.transifex.com/projects/p/owncloud/">translate</a> ownCloud.</p>
-	</div>
-	<div class="col-lg-4 col-md-4 col-xs-12 col-sm-4">
-		<h2><i class="icon-users">&nbsp;</i> Join and help</h2>
-		<div class="join">
-			<a class="btn btn-block btn-lg join-button conf-button" href="/conf" role="button">Hackathon, Berlin</a>
-			<a class="btn btn-block btn-primary btn-lg join-button" href="/contribute" role="button">Join development</a>
-			<a class="btn btn-block btn-primary btn-lg join-button" href="https://github.com/owncloud/core/issues" role="button">Report an issue</a>
-			<a class="btn btn-block btn-primary btn-lg join-button" href="https://www.transifex.com/projects/p/owncloud/" role="button">Help translating</a>
-		</div>
-	</div>
-	<div class="col-lg-4 col-md-4 col-xs-12 col-sm-4">
-	<h2><i class="icon-briefcase">&nbsp;</i> Company support</h2>
-	<p>ownCloud is perfect for use inside your company. Your data on your servers, under your control. <a href="https://owncloud.com">ownCloud Inc</a> offers Enterprise editions with extensive support.</p>
-	</div>
-</div>
-<div class="row 3-column-lg-md-sm">
-	<div class="col-lg-4 col-md-4 col-xs-12 col-sm-4">
-		<h2><i class="icon-twitter"></i> The latest twitter posts</h2>
-		<?php if(CONTRIBOOK) { CONTRIBOOK_MICROBLOG::show(0,3); } ?>
-	</div>
-	<div class="col-lg-4 col-md-4 col-xs-12 col-sm-4">
-		<h2><i class="icon-comment"></i> The latest from the forum</h2>
-		<?php if(CONTRIBOOK) { CONTRIBOOK_FORUM::show(0,7); }?>
-	</div>
-	<div class="col-lg-4 col-md-4 col-xs-12 col-sm-4">
-		<h2><i class="icon-cloud"></i> ownCloud.com news</h2>
-		<?php if(CONTRIBOOK) { CONTRIBOOK_NEWS::show(0,7); } ?>
-	</div>
-</div>
+		</main><!-- /.main -->
+	</div><!-- /.content -->
+</div><!-- /.wrap -->
