@@ -169,7 +169,7 @@ div.home-top-row div {
 	text-align: center;
 }
 
-div.home-top-row h1, div.home-top-row h2, div.home-top-row p {
+.row-blue h1, .row-blue h2, .row-blue p {
 	color: white;
 }
 
@@ -180,4 +180,20 @@ body.home .navbar {
 
 div.row-blue {
 	background-color: #1D2D44;
+}
+
+span.contribook_microbloguserpicture img {
+	border-radius: 100%;
+	border: 2px #1D2D44 solid;
+}
+
+.home-splash > div {
+    display: none
+}
+.home-splash > div:first-child {
+    display: block
+}
+.home-splash:hover > div {
+    display: block !important;
+    opacity: 0.8;
 }
